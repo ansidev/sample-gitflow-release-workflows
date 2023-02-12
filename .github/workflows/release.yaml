@@ -2,14 +2,16 @@ name: release
 
 on:
   pull_request:
-    branches:
-      - main
     types:
       - closed
+    branches:
+      - main
 
 env:
   BRANCH_MAIN: main
   BRANCH_DEVELOP: develop
+  BRANCH_RELEASE_PREFIX: release
+  BRANCH_HOTFIX_PREFIX: hotfix
   TAG_PREFIX: v
 
 jobs:
@@ -20,7 +22,7 @@ jobs:
       contents: write
     # only merge pull requests that begin with 'release/' or 'hotfix/'
     if: github.event.pull_request.merged == true &&
-      (startsWith(github.event.pull_request.head.ref, 'release/') || startsWith(github.event.pull_request.head.ref, 'hotfix/'))
+      (startsWith(github.head_ref, '${{ env.BRANCH_RELEASE_PREFIX }}/') || startsWith(github.head_ref, '${{ env.BRANCH_HOTFIX_PREFIX }}/'))
 
     steps:
       - name: Set GitHub token
@@ -30,21 +32,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.head_ref }}
           token: ${{ env.GH_TOKEN }}
 
       - name: Extract version from release branch
-        if: startsWith(github.event.pull_request.head.ref, 'release/')
+        if: startsWith(github.head_ref, '${{ env.BRANCH_RELEASE_PREFIX }}/')
         run: |
-          BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
-          VERSION=${BRANCH_NAME#release/}
+          BRANCH_NAME="${{ github.head_ref }}"
+          VERSION=${BRANCH_NAME#${{ env.BRANCH_RELEASE_PREFIX }}/}
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Extract version from hotfix branch
-        if: startsWith(github.event.pull_request.head.ref, 'hotfix/')
+        if: startsWith(github.head_ref, '${{ env.BRANCH_HOTFIX_PREFIX }}/')
         run: |
-          BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
-          VERSION=${BRANCH_NAME#hotfix/}
+          BRANCH_NAME="${{ github.head_ref }}"
+          VERSION=${BRANCH_NAME#${{ env.BRANCH_HOTFIX_PREFIX }}/}
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Create release
@@ -57,18 +59,18 @@ jobs:
             --title "${{ env.RELEASE_TAG }}" \
             --generate-notes
 
-      - name: Create merge PR ${{ github.event.pull_request.head.ref }} -> ${{ env.BRANCH_DEVELOP }}
+      - name: Create merge PR ${{ github.head_ref }} -> ${{ env.BRANCH_DEVELOP }}
         env:
-          PR_TITLE: Merge branch '${{ github.event.pull_request.head.ref }}' into ${{ env.BRANCH_DEVELOP }}
+          PR_TITLE: Merge branch '${{ github.head_ref }}' into ${{ env.BRANCH_DEVELOP }}
           PR_BODY: |
-            This PR merges the ${{ github.event.pull_request.head.ref }} branch back into ${{ env.BRANCH_DEVELOP }} branch.
-            This happens to ensure that the updates that happened on the ${{ github.event.pull_request.head.ref }} branch, i.e. CHANGELOG and manifest updates are also present on the ${{ env.BRANCH_DEVELOP }} branch.
-          PR_LABELS: |
-            automated-pr
+            This PR merges the ${{ github.head_ref }} branch back into ${{ env.BRANCH_DEVELOP }} branch.
+            This happens to ensure that the updates that happened on the ${{ github.head_ref }} branch, i.e. CHANGELOG and manifest updates are also present on the ${{ env.BRANCH_DEVELOP }} branch.
+          PR_LABEL: automated-pr
         run: |
+          gh label create ${{ env.PR_LABEL }} --force
           gh pr create \
             --base ${{ env.BRANCH_DEVELOP }} \
-            --head ${{ github.event.pull_request.head.ref }} \
+            --head ${{ github.head_ref }} \
             --title "${{ env.PR_TITLE }}" \
             --body "${{ env.PR_BODY }}" \
             --label "${{ env.PR_LABEL }}" \
