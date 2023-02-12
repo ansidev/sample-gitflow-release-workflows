@@ -23,6 +23,16 @@ jobs:
       (startsWith(github.event.pull_request.head.ref, 'release/') || startsWith(github.event.pull_request.head.ref, 'hotfix/'))
 
     steps:
+      - name: Set GitHub token
+        run: |
+          echo "GH_TOKEN=${{ secrets.GH_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          token: ${{ env.GH_TOKEN }}
+
       - name: Extract version from release branch
         if: startsWith(github.event.pull_request.head.ref, 'release/')
         run: |
@@ -36,10 +46,6 @@ jobs:
           BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
           VERSION=${BRANCH_NAME#hotfix/}
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
-
-      - name: Set GitHub CLI token
-        run: |
-          echo "GH_TOKEN=${{ secrets.GH_TOKEN }}" >> $GITHUB_ENV
 
       - name: Create release
         env:
