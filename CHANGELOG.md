@@ -4,11 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 1.0.1-rc.0 (2023-02-12)
 
-
 ### Features
 
 * **github-actions:** update workflow using GitHub CLI ([d46d2c0](https://github.com/ansidev/sample-gitflow-release-workflows/commit/d46d2c0d4fcde955b68d40400d51a33747a73016))
-
 
 ### Bug Fixes
 
