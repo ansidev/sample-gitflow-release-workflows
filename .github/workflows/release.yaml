@@ -43,7 +43,7 @@ jobs:
 
       - name: Create release
         env:
-          RELEASE_TAG="${{ env.TAG_PREFIX }}${{ env.RELEASE_VERSION }}"
+          RELEASE_TAG: "${{ env.TAG_PREFIX }}${{ env.RELEASE_VERSION }}"
         run: |
           gh release create \
             ${{ env.RELEASE_TAG }} \
