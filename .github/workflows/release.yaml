@@ -39,7 +39,7 @@ jobs:
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           commit: ${{ github.event.pull_request.merge_commit_sha }}
           tag: ${{ env.RELEASE_VERSION }}
           name: ${{ env.RELEASE_VERSION }}
@@ -50,7 +50,7 @@ jobs:
       - name: Create merge PR ${{ github.event.pull_request.head.ref }} -> ${{ env.BRANCH_DEVELOP }}
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           base: ${{ env.BRANCH_DEVELOP }}
           branch: ${{ github.event.pull_request.head.ref }}
           delete-branch: false
