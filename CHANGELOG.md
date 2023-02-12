@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.2...v1.0.1-rc.3) (2023-02-12)
+
+
+### Bug Fixes
+
+* **github-actions:** remove invalid command flag ([1794f4c](https://github.com/ansidev/sample-gitflow-release-workflows/commit/1794f4cc27e9053e6ddbbccd01d7d0895812d510))
+
 ### [1.0.1-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.1...v1.0.1-rc.2) (2023-02-12)
 
 
