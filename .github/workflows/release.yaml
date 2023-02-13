@@ -59,15 +59,17 @@ jobs:
             --title "${{ env.RELEASE_TAG }}" \
             --generate-notes
 
-      - name: Create merge PR ${{ github.head_ref }} -> ${{ env.BRANCH_DEVELOP }}
+      - name: Create PR ${{ github.head_ref }} -> ${{ env.BRANCH_DEVELOP }} and merge automatically
         env:
           PR_TITLE: Merge branch '${{ github.head_ref }}' into ${{ env.BRANCH_DEVELOP }}
           PR_BODY: |
-            This PR merges the ${{ github.head_ref }} branch back into ${{ env.BRANCH_DEVELOP }} branch.
-            This happens to ensure that the updates that happened on the ${{ github.head_ref }} branch, i.e. CHANGELOG and manifest updates are also present on the ${{ env.BRANCH_DEVELOP }} branch.
+            This PR merges the branch `${{ github.head_ref }}` back into the branch `${{ env.BRANCH_DEVELOP }}`.
+
+            This ensures that the updates on the branch `${{ github.head_ref }}`, i.e. CHANGELOG and manifest updates, are also present on the branch `${{ env.BRANCH_DEVELOP }}`.
           PR_LABEL: automated-pr
         run: |
           gh label create ${{ env.PR_LABEL }} --force
+
           gh pr create \
             --base ${{ env.BRANCH_DEVELOP }} \
             --head ${{ github.head_ref }} \
@@ -75,3 +77,6 @@ jobs:
             --body "${{ env.PR_BODY }}" \
             --label "${{ env.PR_LABEL }}" \
             --fill
+
+          PR_ID=$(gh pr list --state open --search "base:${{ env.BRANCH_DEVELOP }} head:${{ github.head_ref }}" | head -1 | cut -f1)
+          [[ ! -z "$PR_ID" ]] && gh pr merge ${PR_ID} -d -t "${{ env.PR_TITLE }}" || echo "Empty PR ID. Ignored!"
