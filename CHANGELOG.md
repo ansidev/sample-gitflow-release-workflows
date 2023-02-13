@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1-rc.7](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7) (2023-02-13)
+
+
+### Bug Fixes
+
+* **github-actions:** fix failed command gh pr create ([c57d773](https://github.com/ansidev/sample-gitflow-release-workflows/commit/c57d773547c355bbff010a12d602f4abb0cb985d))
+
 ### [1.0.1-rc.6](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.5...v1.0.1-rc.6) (2023-02-13)
 
 
