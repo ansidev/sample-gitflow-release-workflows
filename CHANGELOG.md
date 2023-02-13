@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2) (2023-02-13)
+
+
+### Bug Fixes
+
+* **github-actions:** fix PR body ([4701d3a](https://github.com/ansidev/sample-gitflow-release-workflows/commit/4701d3a33ea1f9563662ac0ddeb47ceb972e66d6))
+
 ### [1.0.2-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0) (2023-02-13)
 
 
@@ -60,7 +67,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 * **github-actions:** correct syntax ([dcea1b6](https://github.com/ansidev/sample-gitflow-release-workflows/commit/dcea1b6fde978a05ca3ff8855af26600e7a9f226))
 
-### 1.0.1-rc.0 (2023-02-12)
+### [1.0.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.0-rc.1...v1.0.1-rc.0) (2023-02-12)
 
 ### Features
 
