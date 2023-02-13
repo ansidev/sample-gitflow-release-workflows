@@ -10,8 +10,6 @@ on:
 env:
   BRANCH_MAIN: main
   BRANCH_DEVELOP: develop
-  BRANCH_RELEASE_PREFIX: release
-  BRANCH_HOTFIX_PREFIX: hotfix
   TAG_PREFIX: v
 
 jobs:
@@ -22,7 +20,7 @@ jobs:
       contents: write
     # only merge pull requests that begin with 'release/' or 'hotfix/'
     if: github.event.pull_request.merged == true &&
-      (startsWith(github.head_ref, '${{ env.BRANCH_RELEASE_PREFIX }}/') || startsWith(github.head_ref, '${{ env.BRANCH_HOTFIX_PREFIX }}/'))
+      (startsWith(github.head_ref, 'release/') || startsWith(github.head_ref, 'hotfix/'))
 
     steps:
       - name: Set GitHub token
@@ -36,17 +34,17 @@ jobs:
           token: ${{ env.GH_TOKEN }}
 
       - name: Extract version from release branch
-        if: startsWith(github.head_ref, '${{ env.BRANCH_RELEASE_PREFIX }}/')
+        if: startsWith(github.head_ref, 'release/')
         run: |
           BRANCH_NAME="${{ github.head_ref }}"
-          VERSION=${BRANCH_NAME#${{ env.BRANCH_RELEASE_PREFIX }}/}
+          VERSION=${BRANCH_NAME#release/}
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Extract version from hotfix branch
-        if: startsWith(github.head_ref, '${{ env.BRANCH_HOTFIX_PREFIX }}/')
+        if: startsWith(github.head_ref, 'hotfix/')
         run: |
           BRANCH_NAME="${{ github.head_ref }}"
-          VERSION=${BRANCH_NAME#${{ env.BRANCH_HOTFIX_PREFIX }}/}
+          VERSION=${BRANCH_NAME#hotfix/}
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Create release
