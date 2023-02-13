@@ -2,8 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.0.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2) (2023-02-13)
+## [1.1.0-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0-rc.0) (2023-02-13)
 
+### Features
+
+* **workflow-draft-release-hotfix-pr:** add new workflow for auto creating draft pr on pushing release or hotfix branch ([c539237](https://github.com/ansidev/sample-gitflow-release-workflows/commit/c53923703db4aaa1289092fe76482f98a10e6bea))
+
+### Documentations
+
+* **readme:** update README.md ([9175012](https://github.com/ansidev/sample-gitflow-release-workflows/commit/9175012bed48f47fc08e681983ad21f81e8e2f04))
+
+### [1.0.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2) (2023-02-13)
 
 ### Bug Fixes
 
@@ -11,15 +20,12 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.0.2-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0) (2023-02-13)
 
-
 ### Features
 
 * **workflow-release:** auto create merge commit for PR on merging ([bc07fe5](https://github.com/ansidev/sample-gitflow-release-workflows/commit/bc07fe522fc2dbc8ea4171be7404a8870f4dce38))
 * **workflow-release:** auto merge PR after creating ([85a272f](https://github.com/ansidev/sample-gitflow-release-workflows/commit/85a272f377da0589b55bbc9420d933237f41ff6e))
 
-
 ### [1.0.1-rc.7](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7) (2023-02-13)
-
 
 ### Bug Fixes
 
@@ -27,13 +33,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.0.1-rc.6](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.5...v1.0.1-rc.6) (2023-02-13)
 
-
 ### Bug Fixes
 
 * **github-actions:** correct command flag value ([95af6a2](https://github.com/ansidev/sample-gitflow-release-workflows/commit/95af6a2f92adb1f3a6709c9225b3028aedbc5987))
 
 ### [1.0.1-rc.5](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.4...v1.0.1-rc.5) (2023-02-13)
-
 
 ### Bug Fixes
 
@@ -41,13 +45,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.0.1-rc.4](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.3...v1.0.1-rc.4) (2023-02-12)
 
-
 ### Bug Fixes
 
 * **github-actions:** fix fail steps and refactor code ([872d740](https://github.com/ansidev/sample-gitflow-release-workflows/commit/872d740b98dd15adc988079744656814229f37d5))
 
 ### [1.0.1-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.2...v1.0.1-rc.3) (2023-02-12)
-
 
 ### Bug Fixes
 
@@ -55,13 +57,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.0.1-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.1...v1.0.1-rc.2) (2023-02-12)
 
-
 ### Bug Fixes
 
 * **github-actions:** add missing checkout step ([e20f63a](https://github.com/ansidev/sample-gitflow-release-workflows/commit/e20f63ababd316d413b9573c727c68717b3b480d))
 
 ### [1.0.1-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.0...v1.0.1-rc.1) (2023-02-12)
-
 
 ### Bug Fixes
 
