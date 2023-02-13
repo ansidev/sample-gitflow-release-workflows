@@ -7,17 +7,25 @@ Sample Gitflow release workflow using GitHub Actions and official [GitHub CLI](h
 
 ## Features
 
-- Auto create and publish a new release on merging changes from `release/**`/`hotfix/**` into `main`.
+- Auto create a draft PR on pushing new branch `release/**` or `hotfix/**`.
+  - Auto add following labels for PR:
+    - `automated-pr`,
+    - `release-pr`: if normal release.
+    - `hotfix-pr`: if hotfix release.
+    - `pre-release`: if version contains `alpha`, `beta`, `rc`.
+  - **Note:** You are responsible for preparing release materials: changelog, bump version,... using your favorite tools.
+- Auto create and publish a new release on merging changes from `release/**` or `hotfix/**` into `main`.
 - Auto create corresponding git tag with the released version.
-- Auto create PR and merge changes from `release/**`/`hotfix/**` back into `develop`.
+- Auto create PR and merge changes from `release/**` or `hotfix/**` back into `develop`.
 
 ## Manual
 
 - Workflows
 
-  | Name    | Description        | File                                             |
-  | ------- | ------------------ | ------------------------------------------------ |
-  | Release | Automate releasing | [release.yaml](./.github/workflows/release.yaml) |
+  | Name                    | Description                    | File                                                                             |
+  | ----------------------- | ------------------------------ | -------------------------------------------------------------------------------- |
+  | Release                 | Automate releasing             | [release.yaml](./.github/workflows/release.yaml)                                 |
+  | Draft Release/Hotfix PR | Automate drafting a release PR | [draft_release_hotfix_pr.yaml](./.github/workflows/draft_release_hotfix_pr.yaml) |
 
 - You have to update below env variables if necessary
 
