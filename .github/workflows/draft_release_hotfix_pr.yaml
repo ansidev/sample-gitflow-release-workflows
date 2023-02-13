@@ -62,15 +62,24 @@ jobs:
           echo "PR_TITLE=$PR_TITLE" >> $GITHUB_ENV
 
       - name: Create PR '${{ env.PR_TITLE }}'
+        env:
+          PR_BODY: |
+            This PR was created to prepare for releasing ${{ env.TAG_PREFIX }}${{ env.RELEASE_VERSION }}.
+
+            Merging this PR will create the GitHub release ${{ env.TAG_PREFIX }}${{ env.RELEASE_VERSION }}.
         run: |
           PR_LABELS="automated-pr,${RELEASE_TYPE}-pr"
           for LABEL in $(echo $PR_LABELS | sed "s/,/ /g"); do gh label create $LABEL --force; done
           [[ ${PRE_RELEASE:false} == "true" ]] && gh label create 'pre-release' --force
 
-          gh pr create \
-            --draft \
-            --base ${{ env.BRANCH_MAIN }} \
-            --head ${{ github.ref_name }} \
-            --title "${{ env.PR_TITLE }}" \
-            --label "${{ env.PR_LABELS }}" \
-            --fill
+          PR_ID=$(gh pr list --state open --search "base:${{ env.BRANCH_MAIN }} head:${{ github.ref_name }}" | head -1 | cut -f1)
+          [[ ! -z "$PR_ID" ]] && \
+            gh pr create \
+              --draft \
+              --base "${{ env.BRANCH_MAIN }}" \
+              --head "${{ github.ref_name }}" \
+              --title "${{ env.PR_TITLE }}" \
+              --body "${{ env.PR_BODY }}" \
+              --label "${PR_LABELS}" \
+              --fill \
+          || echo "PR was created. Ignored!"
