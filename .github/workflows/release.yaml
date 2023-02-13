@@ -79,4 +79,4 @@ jobs:
             --fill
 
           PR_ID=$(gh pr list --state open --search "base:${{ env.BRANCH_DEVELOP }} head:${{ github.head_ref }}" | head -1 | cut -f1)
-          [[ ! -z "$PR_ID" ]] && gh pr merge ${PR_ID} -d -t "${{ env.PR_TITLE }}" || echo "Empty PR ID. Ignored!"
+          [[ ! -z "$PR_ID" ]] && gh pr merge ${PR_ID} -m -d -t "${{ env.PR_TITLE }}" || echo "Empty PR ID. Ignored!"
