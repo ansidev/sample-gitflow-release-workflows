@@ -32,6 +32,8 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ env.GH_TOKEN }}
+          # needed by "gh pr create"
+          fetch-depth: 0
 
       - name: Extract version from release branch
         if: startsWith(github.head_ref, 'release/')
@@ -68,7 +70,7 @@ jobs:
           gh label create ${{ env.PR_LABEL }} --force
           gh pr create \
             --base ${{ env.BRANCH_DEVELOP }} \
-            --head ${{ github.event.pull_request.merge_commit_sha }} \
+            --head ${{ github.head_ref }} \
             --title "${{ env.PR_TITLE }}" \
             --body "${{ env.PR_BODY }}" \
             --label "${{ env.PR_LABEL }}" \
