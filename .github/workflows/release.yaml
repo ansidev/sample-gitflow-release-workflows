@@ -68,7 +68,7 @@ jobs:
           gh label create ${{ env.PR_LABEL }} --force
           gh pr create \
             --base ${{ env.BRANCH_DEVELOP }} \
-            --head ${{ github.head_ref }} \
+            --head ${{ github.event.pull_request.merge_commit_sha }} \
             --title "${{ env.PR_TITLE }}" \
             --body "${{ env.PR_BODY }}" \
             --label "${{ env.PR_LABEL }}" \
