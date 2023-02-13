@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0) (2023-02-13)
+
+
+### Features
+
+* **workflow-release:** auto create merge commit for PR on merging ([bc07fe5](https://github.com/ansidev/sample-gitflow-release-workflows/commit/bc07fe522fc2dbc8ea4171be7404a8870f4dce38))
+* **workflow-release:** auto merge PR after creating ([85a272f](https://github.com/ansidev/sample-gitflow-release-workflows/commit/85a272f377da0589b55bbc9420d933237f41ff6e))
+
+
 ### [1.0.1-rc.7](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7) (2023-02-13)
 
 
