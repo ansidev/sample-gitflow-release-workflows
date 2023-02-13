@@ -63,9 +63,9 @@ jobs:
         env:
           PR_TITLE: Merge branch '${{ github.head_ref }}' into ${{ env.BRANCH_DEVELOP }}
           PR_BODY: |
-            This PR merges the branch `${{ github.head_ref }}` back into the branch `${{ env.BRANCH_DEVELOP }}`.
+            This PR merges the branch '${{ github.head_ref }}' back into the branch '${{ env.BRANCH_DEVELOP }}'.
 
-            This ensures that the updates on the branch `${{ github.head_ref }}`, i.e. CHANGELOG and manifest updates, are also present on the branch `${{ env.BRANCH_DEVELOP }}`.
+            This ensures that the updates on the branch '${{ github.head_ref }}', i.e. CHANGELOG and manifest updates, are also present on the branch '${{ env.BRANCH_DEVELOP }}'.
           PR_LABEL: automated-pr
         run: |
           gh label create ${{ env.PR_LABEL }} --force
