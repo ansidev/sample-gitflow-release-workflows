@@ -36,6 +36,13 @@ Sample Gitflow release workflow using GitHub Actions and official [GitHub CLI](h
   | BRANCH_DEVELOP       | The develop branch     | `develop`     |
   | TAG_PREFIX           | The prefix for git tag | `v`           |
 
+  **Note**: If you don't use the above default values, you have to update corresponding values for the workflow(s).
+
+## Reference documentations
+
+- [Events that trigger workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows).
+- [Webhook events and payloads](https://docs.github.com/developers/webhooks-and-events/webhooks/webhook-events-and-payloads).
+
 ## Contact
 
 Le Minh Tri [@ansidev](https://ansidev.xyz/about).
