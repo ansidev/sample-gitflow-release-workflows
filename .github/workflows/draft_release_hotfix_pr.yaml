@@ -69,11 +69,13 @@ jobs:
             Merging this PR will create the GitHub release ${{ env.TAG_PREFIX }}${{ env.RELEASE_VERSION }}.
         run: |
           PR_LABELS="automated-pr,${RELEASE_TYPE}-pr"
+
+          [[ ${PRE_RELEASE:false} == "true" ]] && ( gh label create 'pre-release' --force && PR_LABELS="$PR_LABELS,pre-release" )
+
           for LABEL in $(echo $PR_LABELS | sed "s/,/ /g"); do gh label create $LABEL --force; done
-          [[ ${PRE_RELEASE:false} == "true" ]] && gh label create 'pre-release' --force
 
           PR_ID=$(gh pr list --state open --search "base:${{ env.BRANCH_MAIN }} head:${{ github.ref_name }}" | head -1 | cut -f1)
-          [[ ! -z "$PR_ID" ]] && \
+          [[ ! -z "$PR_ID" ]] && echo "PR was created with ID $PR_ID. Ignored!" || \
             gh pr create \
               --draft \
               --base "${{ env.BRANCH_MAIN }}" \
@@ -81,5 +83,4 @@ jobs:
               --title "${{ env.PR_TITLE }}" \
               --body "${{ env.PR_BODY }}" \
               --label "${PR_LABELS}" \
-              --fill \
-          || echo "PR was created. Ignored!"
+              --fill
