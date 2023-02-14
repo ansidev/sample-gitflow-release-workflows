@@ -70,7 +70,7 @@ jobs:
         run: |
           PR_LABELS="automated-pr,${RELEASE_TYPE}-pr"
 
-          [[ ${PRE_RELEASE:false} == "true" ]] && ( gh label create 'pre-release' --force && PR_LABELS="$PR_LABELS,pre-release" )
+          [[ ${PRE_RELEASE:false} == "true" ]] && gh label create 'pre-release' --force && PR_LABELS="$PR_LABELS,pre-release"
 
           for LABEL in $(echo $PR_LABELS | sed "s/,/ /g"); do gh label create $LABEL --force; done
 
