@@ -49,6 +49,11 @@ jobs:
           VERSION=${BRANCH_NAME#hotfix/}
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
 
+      - name: Check whether pre-release version
+        if: contains(env.RELEASE_VERSION, 'alpha') || contains(env.RELEASE_VERSION, 'beta') || contains(env.RELEASE_VERSION, 'rc')
+        run: |
+          echo "PRE_RELEASE=true" >> $GITHUB_ENV
+
       - name: Create release
         env:
           RELEASE_TAG: "${{ env.TAG_PREFIX }}${{ env.RELEASE_VERSION }}"
@@ -57,7 +62,8 @@ jobs:
             ${{ env.RELEASE_TAG }} \
             --target ${{ github.event.pull_request.merge_commit_sha }} \
             --title "${{ env.RELEASE_TAG }}" \
-            --generate-notes
+            --generate-notes \
+            --prerelease=${PRE_RELEASE:-false}
 
       - name: Create PR ${{ github.head_ref }} -> ${{ env.BRANCH_DEVELOP }} and merge automatically
         env:
