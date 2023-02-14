@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0) (2023-02-14)
+
+### Bug Fixes
+
+* **workflow-draft-release-hotfix-pr:** correct bash syntax ([e2b4f5d](https://github.com/ansidev/sample-gitflow-release-workflows/commit/e2b4f5d5b4f9534d0bd12eda8845b8d7c5da070f))
+* **workflow-release:** set the release as pre-release depending on the version ([dad55ae](https://github.com/ansidev/sample-gitflow-release-workflows/commit/dad55ae20f9482519d7a5c7b80051c8b812656ba))
+
 ## [1.1.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0) (2023-02-14)
 
 ### Features
