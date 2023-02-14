@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.2...v1.1.0-rc.3) (2023-02-14)
+
+### Bug Fixes
+
+* **workflow-auto-merge-release-hotfix-into-develop:** add missing step checkout repository ([0ad55e9](https://github.com/ansidev/sample-gitflow-release-workflows/commit/0ad55e940fbb28eed070fd4926a0597aed0b1f87))
+
 ## [1.1.0-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.1...v1.1.0-rc.2) (2023-02-14)
 
 ### Bug Fixes
