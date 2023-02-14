@@ -22,10 +22,11 @@ Sample Gitflow release workflow using GitHub Actions and official [GitHub CLI](h
 
 - Workflows
 
-  | Name                    | Description                    | File                                                                             |
-  | ----------------------- | ------------------------------ | -------------------------------------------------------------------------------- |
-  | Release                 | Automate releasing             | [release.yaml](./.github/workflows/release.yaml)                                 |
-  | Draft Release/Hotfix PR | Automate drafting a release PR | [draft_release_hotfix_pr.yaml](./.github/workflows/draft_release_hotfix_pr.yaml) |
+  | Name                                   | Description                                     | File                                                                                                           |
+  | -------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+  | Release                                | Automate releasing                              | [release.yaml](./.github/workflows/release.yaml)                                                               |
+  | Auto merge release/hotfix into develop | Automate merging release/hotfix PR into develop | [auto_merge_release_hotfix_into_develop.yaml](./.github/workflows/auto_merge_release_hotfix_into_develop.yaml) |
+  | Draft release/hotfix PR                | Automate drafting a release/hotfix PR           | [draft_release_hotfix_pr.yaml](./.github/workflows/draft_release_hotfix_pr.yaml)                               |
 
 - You have to update below env variables if necessary
 
