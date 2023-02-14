@@ -49,7 +49,7 @@ jobs:
           echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
           echo "RELEASE_TYPE=hotfix" >> $GITHUB_ENV
 
-      - name: Check whether pre-release-version
+      - name: Check whether pre-release version
         if: contains(env.RELEASE_VERSION, 'alpha') || contains(env.RELEASE_VERSION, 'beta') || contains(env.RELEASE_VERSION, 'rc')
         run: |
           echo "PRE_RELEASE=true" >> $GITHUB_ENV
@@ -70,7 +70,7 @@ jobs:
         run: |
           PR_LABELS="automated-pr,${RELEASE_TYPE}-pr"
 
-          [[ ${PRE_RELEASE:false} == "true" ]] && gh label create 'pre-release' --force && PR_LABELS="$PR_LABELS,pre-release"
+          [[ ${PRE_RELEASE:-false} == "true" ]] && gh label create 'pre-release' --force && PR_LABELS="$PR_LABELS,pre-release"
 
           for LABEL in $(echo $PR_LABELS | sed "s/,/ /g"); do gh label create $LABEL --force; done
 
