@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.1...v1.1.0-rc.2) (2023-02-14)
+
+### Bug Fixes
+
+* **workflow-auto-merge-release-hotfix-into-develop:** set environment variable `GH_TOKEN` ([5e57d0e](https://github.com/ansidev/sample-gitflow-release-workflows/commit/5e57d0e99cf383b1926b8d263a90c128009046e6))
+* **workflow-draft-release-hotfix-pr:** fix PR is missing label `pre-release` ([9c63f52](https://github.com/ansidev/sample-gitflow-release-workflows/commit/9c63f522430ddc3e689081f4df5345be5fdd3494))
+
+### Documentations
+
+* **readme:** add reference documentations ([3c310e3](https://github.com/ansidev/sample-gitflow-release-workflows/commit/3c310e3d591481b7c7d8daa748a8f838c0702dd5))
+
 ## [1.1.0-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.0...v1.1.0-rc.1) (2023-02-14)
 
 ### Features
