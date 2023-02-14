@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1) (2023-02-14)
+
+
+### Bug Fixes
+
+Workflows
+
+* **release.yaml:** Auto set the release as pre-release depending on the version
+
 ## [1.1.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0) (2023-02-14)
 
 ### Bug Fixes
