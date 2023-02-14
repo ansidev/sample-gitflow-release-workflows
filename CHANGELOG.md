@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0) (2023-02-14)
+
+### Features
+
+Workflows
+
+* **draft_release_hotfix_pr.yaml:** Auto create draft PR on pushing to release/hotfix branch
+* **auto_merge_release_hotfix_into_develop.yaml:** Auto merge branch release/hotfix into develop after new version was released.
+
+### Documentations
+
+* **readme:** updated.
+
 ## [1.1.0-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.2...v1.1.0-rc.3) (2023-02-14)
 
 ### Bug Fixes
