@@ -20,6 +20,10 @@ jobs:
     if: startsWith(github.head_ref, 'release/') || startsWith(github.head_ref, 'hotfix/')
 
     steps:
+      - name: Set GitHub token
+        run: |
+          echo "GH_TOKEN=${{ secrets.GH_TOKEN }}" >> $GITHUB_ENV
+
       - name: Merge PR
         env:
           PR_NUMBER: ${{ github.event.number }}
