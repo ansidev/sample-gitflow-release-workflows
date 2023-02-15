@@ -1,145 +1,223 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
-## [1.1.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1) (2023-02-14)
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
 
-### Bug Fixes
-
-Workflows
-
-* **release.yaml:** Auto set the release as pre-release depending on the version
-
-## [1.1.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0) (2023-02-14)
-
-### Bug Fixes
-
-* **workflow-draft-release-hotfix-pr:** correct bash syntax ([e2b4f5d](https://github.com/ansidev/sample-gitflow-release-workflows/commit/e2b4f5d5b4f9534d0bd12eda8845b8d7c5da070f))
-* **workflow-release:** set the release as pre-release depending on the version ([dad55ae](https://github.com/ansidev/sample-gitflow-release-workflows/commit/dad55ae20f9482519d7a5c7b80051c8b812656ba))
-
-## [1.1.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0) (2023-02-14)
-
-### Features
-
-Workflows
-
-* **draft_release_hotfix_pr.yaml:** Auto create draft PR on pushing to release/hotfix branch
-* **auto_merge_release_hotfix_into_develop.yaml:** Auto merge branch release/hotfix into develop after new version was released.
+## [v1.1.2] (2023-02-15)
 
 ### Documentations
 
-* **readme:** updated.
+- **changelog:** change format of CHANGELOG.md
 
-## [1.1.0-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.2...v1.1.0-rc.3) (2023-02-14)
+### Features
+
+- **dev-tool:** add git-chglog config
+
+Full Changelog: [v1.1.1...v1.1.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1...v1.1.2)
+
+## [v1.1.1] (2023-02-14)
+
+Full Changelog: [v1.1.1-rc.0...v1.1.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1-rc.0...v1.1.1)
+
+## [v1.1.1-rc.0] (2023-02-14)
 
 ### Bug Fixes
 
-* **workflow-auto-merge-release-hotfix-into-develop:** add missing step checkout repository ([0ad55e9](https://github.com/ansidev/sample-gitflow-release-workflows/commit/0ad55e940fbb28eed070fd4926a0597aed0b1f87))
+- **workflow-draft-release-hotfix-pr:** correct bash syntax
 
-## [1.1.0-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.1...v1.1.0-rc.2) (2023-02-14)
+- **workflow-release:** set the release as pre-release depending on the version
+
+Full Changelog: [v1.1.0...v1.1.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0)
+
+## [v1.1.0] (2023-02-14)
+
+Full Changelog: [v1.1.0-rc.3...v1.1.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.3...v1.1.0)
+
+## [v1.1.0-rc.3] (2023-02-14)
 
 ### Bug Fixes
 
-* **workflow-auto-merge-release-hotfix-into-develop:** set environment variable `GH_TOKEN` ([5e57d0e](https://github.com/ansidev/sample-gitflow-release-workflows/commit/5e57d0e99cf383b1926b8d263a90c128009046e6))
-* **workflow-draft-release-hotfix-pr:** fix PR is missing label `pre-release` ([9c63f52](https://github.com/ansidev/sample-gitflow-release-workflows/commit/9c63f522430ddc3e689081f4df5345be5fdd3494))
+- **workflow-auto-merge-release-hotfix-into-develop:** add missing step checkout repository
+
+Full Changelog: [v1.1.0-rc.2...v1.1.0-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.2...v1.1.0-rc.3)
+
+## [v1.1.0-rc.2] (2023-02-14)
+
+### Bug Fixes
+
+- **workflow-auto-merge-release-hotfix-into-develop:** set environment variable `GH_TOKEN`
+
+- **workflow-draft-release-hotfix-pr:** fix PR is missing label `pre-release`
 
 ### Documentations
 
-* **readme:** add reference documentations ([3c310e3](https://github.com/ansidev/sample-gitflow-release-workflows/commit/3c310e3d591481b7c7d8daa748a8f838c0702dd5))
+- **readme:** add reference documentations
 
-## [1.1.0-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.0...v1.1.0-rc.1) (2023-02-14)
+Full Changelog: [v1.1.0-rc.1...v1.1.0-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.1...v1.1.0-rc.2)
 
-### Features
-
-* **workflow-auto-merge-release-hotfix-into-develop:** add new workflow for auto merging release/hotfix into develop ([c9d2c41](https://github.com/ansidev/sample-gitflow-release-workflows/commit/c9d2c413e1c3e3aeb1d3c31c529b96f5c29e4bf5))
+## [v1.1.0-rc.1] (2023-02-14)
 
 ### Bug Fixes
 
-* **workflow-draft-release-hotfix-pr:** correct wrong logic ([f36ddf1](https://github.com/ansidev/sample-gitflow-release-workflows/commit/f36ddf1e174e72b65b21efa41f623ce2371d0355))
-* **workflow-draft-release-hotfix-pr:** fix PR is missing label `pre-release` ([fe4d1e0](https://github.com/ansidev/sample-gitflow-release-workflows/commit/fe4d1e00b9d2517bbe0f89794ea2668bea5765fa))
+- **workflow-draft-release-hotfix-pr:** fix PR is missing label `pre-release`
+
+- **workflow-draft-release-hotfix-pr:** correct wrong logic
 
 ### Documentations
 
-* **readme:** update README.md ([bd62d5a](https://github.com/ansidev/sample-gitflow-release-workflows/commit/bd62d5abd674b76d452b3b1c151749ca572f3f79))
-
-## [1.1.0-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0-rc.0) (2023-02-13)
+- update README.md
 
 ### Features
 
-* **workflow-draft-release-hotfix-pr:** add new workflow for auto creating draft pr on pushing release or hotfix branch ([c539237](https://github.com/ansidev/sample-gitflow-release-workflows/commit/c53923703db4aaa1289092fe76482f98a10e6bea))
+- **workflow-auto-merge-release-hotfix-into-develop:** add new workflow for auto merging release/hotfix into develop ([#26](https://github.com/ansidev/sample-gitflow-release-workflows/issues/26))
+
+- **workflow-auto-merge-release-hotfix-into-develop:** add new workflow for auto merging release/hotfix into develop
+
+Full Changelog: [v1.1.0-rc.0...v1.1.0-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.0...v1.1.0-rc.1)
+
+## [v1.1.0-rc.0] (2023-02-14)
+
+### Bug Fixes
+
+- **workflow-draft_release_hotfix_pr:** ignore creating PR if it exists, add custom PR description
+
+- **workflow-draft_release_hotfix_pr:** correct syntax
 
 ### Documentations
 
-* **readme:** update README.md ([9175012](https://github.com/ansidev/sample-gitflow-release-workflows/commit/9175012bed48f47fc08e681983ad21f81e8e2f04))
-
-## [1.0.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2) (2023-02-13)
-
-### Bug Fixes
-
-* **github-actions:** fix PR body ([4701d3a](https://github.com/ansidev/sample-gitflow-release-workflows/commit/4701d3a33ea1f9563662ac0ddeb47ceb972e66d6))
-
-## [1.0.2-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0) (2023-02-13)
+- update README.md
 
 ### Features
 
-* **workflow-release:** auto create merge commit for PR on merging ([bc07fe5](https://github.com/ansidev/sample-gitflow-release-workflows/commit/bc07fe522fc2dbc8ea4171be7404a8870f4dce38))
-* **workflow-release:** auto merge PR after creating ([85a272f](https://github.com/ansidev/sample-gitflow-release-workflows/commit/85a272f377da0589b55bbc9420d933237f41ff6e))
+- **workflow-draft-release-hotfix-pr:** add new workflow for auto creating draft pr on pushing release or hotfix branch
 
-## [1.0.1-rc.7](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7) (2023-02-13)
+Full Changelog: [v1.0.2...v1.1.0-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0-rc.0)
 
-### Bug Fixes
-
-* **github-actions:** fix failed command gh pr create ([c57d773](https://github.com/ansidev/sample-gitflow-release-workflows/commit/c57d773547c355bbff010a12d602f4abb0cb985d))
-
-## [1.0.1-rc.6](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.5...v1.0.1-rc.6) (2023-02-13)
+## [v1.0.2] (2023-02-13)
 
 ### Bug Fixes
 
-* **github-actions:** correct command flag value ([95af6a2](https://github.com/ansidev/sample-gitflow-release-workflows/commit/95af6a2f92adb1f3a6709c9225b3028aedbc5987))
+- **github-actions:** fix PR body
 
-## [1.0.1-rc.5](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.4...v1.0.1-rc.5) (2023-02-13)
+### Documentations
 
-### Bug Fixes
+- update README.md
 
-* **github-actions:** revert wrong changes ([1e044df](https://github.com/ansidev/sample-gitflow-release-workflows/commit/1e044dfd9746afbe7263c484813a8a26920119bf))
+Full Changelog: [v1.0.2-rc.0...v1.0.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2)
 
-## [1.0.1-rc.4](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.3...v1.0.1-rc.4) (2023-02-12)
-
-### Bug Fixes
-
-* **github-actions:** fix fail steps and refactor code ([872d740](https://github.com/ansidev/sample-gitflow-release-workflows/commit/872d740b98dd15adc988079744656814229f37d5))
-
-## [1.0.1-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.2...v1.0.1-rc.3) (2023-02-12)
-
-### Bug Fixes
-
-* **github-actions:** remove invalid command flag ([1794f4c](https://github.com/ansidev/sample-gitflow-release-workflows/commit/1794f4cc27e9053e6ddbbccd01d7d0895812d510))
-
-## [1.0.1-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.1...v1.0.1-rc.2) (2023-02-12)
-
-### Bug Fixes
-
-* **github-actions:** add missing checkout step ([e20f63a](https://github.com/ansidev/sample-gitflow-release-workflows/commit/e20f63ababd316d413b9573c727c68717b3b480d))
-
-## [1.0.1-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.0...v1.0.1-rc.1) (2023-02-12)
-
-### Bug Fixes
-
-* **github-actions:** correct syntax ([dcea1b6](https://github.com/ansidev/sample-gitflow-release-workflows/commit/dcea1b6fde978a05ca3ff8855af26600e7a9f226))
-
-## [1.0.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.0-rc.1...v1.0.1-rc.0) (2023-02-12)
+## [v1.0.2-rc.0] (2023-02-13)
 
 ### Features
 
-* **github-actions:** update workflow using GitHub CLI ([d46d2c0](https://github.com/ansidev/sample-gitflow-release-workflows/commit/d46d2c0d4fcde955b68d40400d51a33747a73016))
+- **workflow-release:** auto create merge commit for PR on merging
+
+- **workflow-release:** auto merge PR after creating ([#18](https://github.com/ansidev/sample-gitflow-release-workflows/issues/18))
+
+- **workflow-release:** auto merge PR after creating
+
+Full Changelog: [v1.0.1-rc.7...v1.0.2-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0)
+
+## [v1.0.1-rc.7] (2023-02-13)
 
 ### Bug Fixes
 
-* **github-actions:** rename repository secret variable GITHUB_TOKEN to GH_TOKEN ([5da410e](https://github.com/ansidev/sample-gitflow-release-workflows/commit/5da410ee04fe1151835df35f4795dab51d18aa18))
+- **github-actions:** fix failed command gh pr create
 
-## 1.0.0-rc.1 (2023-02-12)
+Full Changelog: [v1.0.1-rc.6...v1.0.1-rc.7](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7)
+
+## [v1.0.1-rc.6] (2023-02-13)
+
+### Bug Fixes
+
+- **github-actions:** correct command flag value
+
+Full Changelog: [v1.0.1-rc.5...v1.0.1-rc.6](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.5...v1.0.1-rc.6)
+
+## [v1.0.1-rc.5] (2023-02-13)
+
+### Bug Fixes
+
+- **github-actions:** revert wrong changes
+
+Full Changelog: [v1.0.1-rc.4...v1.0.1-rc.5](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.4...v1.0.1-rc.5)
+
+## [v1.0.1-rc.4] (2023-02-13)
+
+### Bug Fixes
+
+- **github-actions:** fix fail steps and refactor code
+
+Full Changelog: [v1.0.1-rc.3...v1.0.1-rc.4](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.3...v1.0.1-rc.4)
+
+## [v1.0.1-rc.3] (2023-02-13)
+
+### Bug Fixes
+
+- **github-actions:** remove invalid command flag
+
+Full Changelog: [v1.0.1-rc.2...v1.0.1-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.2...v1.0.1-rc.3)
+
+## [v1.0.1-rc.2] (2023-02-13)
+
+### Bug Fixes
+
+- **github-actions:** add missing checkout step
+
+Full Changelog: [v1.0.1-rc.1...v1.0.1-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.1...v1.0.1-rc.2)
+
+## [v1.0.1-rc.1] (2023-02-13)
+
+### Bug Fixes
+
+- **github-actions:** correct syntax
+
+Full Changelog: [v1.0.1-rc.0...v1.0.1-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.0...v1.0.1-rc.1)
+
+## [v1.0.1-rc.0] (2023-02-13)
+
+### Bug Fixes
+
+- **github-actions:** rename repository secret variable GITHUB_TOKEN to GH_TOKEN
+
+### Documentations
+
+- update README.md
 
 ### Features
 
-* **ci:** add workflow release ([b6d71ae](https://github.com/ansidev/sample-gitflow-release-workflows/commit/b6d71aeb3e913af7261e62c9091802078f6cb6b5))
+- **github-actions:** update workflow using GitHub CLI
+
+Full Changelog: [v1.0.0-rc.1...v1.0.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.0-rc.1...v1.0.1-rc.0)
+
+## v1.0.0-rc.1 (2023-02-13)
+
+### Bug Fixes
+
+- **github-actions:** rename repository secret variable GITHUB_TOKEN to GH_TOKEN
+
+### Documentations
+
+- update README.md
+
+Full Changelog: [v1.0.0-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/commits/v1.0.0-rc.1)
+
+[v1.1.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1...v1.1.2
+[v1.1.1]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1-rc.0...v1.1.1
+[v1.1.1-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0
+[v1.1.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.3...v1.1.0
+[v1.1.0-rc.3]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.2...v1.1.0-rc.3
+[v1.1.0-rc.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.1...v1.1.0-rc.2
+[v1.1.0-rc.1]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.0...v1.1.0-rc.1
+[v1.1.0-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0-rc.0
+[v1.0.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2
+[v1.0.2-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0
+[v1.0.1-rc.7]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7
+[v1.0.1-rc.6]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.5...v1.0.1-rc.6
+[v1.0.1-rc.5]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.4...v1.0.1-rc.5
+[v1.0.1-rc.4]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.3...v1.0.1-rc.4
+[v1.0.1-rc.3]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.2...v1.0.1-rc.3
+[v1.0.1-rc.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.1...v1.0.1-rc.2
+[v1.0.1-rc.1]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.0...v1.0.1-rc.1
+[v1.0.1-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.0-rc.1...v1.0.1-rc.0
