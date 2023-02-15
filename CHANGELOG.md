@@ -4,8 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v1.1.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.2...v1.1.3) (2023-02-15)
 
-## [v1.1.2] (2023-02-15)
+### Documentations
+
+- **changelog:** generate changelog file by version
+
+### Features
+
+- **dev-tool:** add changie and custom generate config
+
+Full Changelog: [v1.1.2...v1.1.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.2...v1.1.3)
+
+## [v1.1.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1...v1.1.2) (2023-02-15)
 
 ### Documentations
 
@@ -17,11 +28,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 Full Changelog: [v1.1.1...v1.1.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1...v1.1.2)
 
-## [v1.1.1] (2023-02-14)
+## [v1.1.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1-rc.0...v1.1.1) (2023-02-14)
 
 Full Changelog: [v1.1.1-rc.0...v1.1.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1-rc.0...v1.1.1)
 
-## [v1.1.1-rc.0] (2023-02-14)
+## [v1.1.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0) (2023-02-14)
 
 ### Bug Fixes
 
@@ -31,11 +42,11 @@ Full Changelog: [v1.1.1-rc.0...v1.1.1](https://github.com/ansidev/sample-gitflow
 
 Full Changelog: [v1.1.0...v1.1.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0)
 
-## [v1.1.0] (2023-02-14)
+## [v1.1.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.3...v1.1.0) (2023-02-14)
 
 Full Changelog: [v1.1.0-rc.3...v1.1.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.3...v1.1.0)
 
-## [v1.1.0-rc.3] (2023-02-14)
+## [v1.1.0-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.2...v1.1.0-rc.3) (2023-02-14)
 
 ### Bug Fixes
 
@@ -43,7 +54,7 @@ Full Changelog: [v1.1.0-rc.3...v1.1.0](https://github.com/ansidev/sample-gitflow
 
 Full Changelog: [v1.1.0-rc.2...v1.1.0-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.2...v1.1.0-rc.3)
 
-## [v1.1.0-rc.2] (2023-02-14)
+## [v1.1.0-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.1...v1.1.0-rc.2) (2023-02-14)
 
 ### Bug Fixes
 
@@ -57,7 +68,7 @@ Full Changelog: [v1.1.0-rc.2...v1.1.0-rc.3](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.1.0-rc.1...v1.1.0-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.1...v1.1.0-rc.2)
 
-## [v1.1.0-rc.1] (2023-02-14)
+## [v1.1.0-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.0...v1.1.0-rc.1) (2023-02-14)
 
 ### Bug Fixes
 
@@ -77,7 +88,7 @@ Full Changelog: [v1.1.0-rc.1...v1.1.0-rc.2](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.1.0-rc.0...v1.1.0-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.0...v1.1.0-rc.1)
 
-## [v1.1.0-rc.0] (2023-02-14)
+## [v1.1.0-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0-rc.0) (2023-02-14)
 
 ### Bug Fixes
 
@@ -95,7 +106,7 @@ Full Changelog: [v1.1.0-rc.0...v1.1.0-rc.1](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.2...v1.1.0-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0-rc.0)
 
-## [v1.0.2] (2023-02-13)
+## [v1.0.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2) (2023-02-13)
 
 ### Bug Fixes
 
@@ -107,7 +118,7 @@ Full Changelog: [v1.0.2...v1.1.0-rc.0](https://github.com/ansidev/sample-gitflow
 
 Full Changelog: [v1.0.2-rc.0...v1.0.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2)
 
-## [v1.0.2-rc.0] (2023-02-13)
+## [v1.0.2-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0) (2023-02-13)
 
 ### Features
 
@@ -119,7 +130,7 @@ Full Changelog: [v1.0.2-rc.0...v1.0.2](https://github.com/ansidev/sample-gitflow
 
 Full Changelog: [v1.0.1-rc.7...v1.0.2-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0)
 
-## [v1.0.1-rc.7] (2023-02-13)
+## [v1.0.1-rc.7](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7) (2023-02-13)
 
 ### Bug Fixes
 
@@ -127,7 +138,7 @@ Full Changelog: [v1.0.1-rc.7...v1.0.2-rc.0](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.1-rc.6...v1.0.1-rc.7](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7)
 
-## [v1.0.1-rc.6] (2023-02-13)
+## [v1.0.1-rc.6](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.5...v1.0.1-rc.6) (2023-02-13)
 
 ### Bug Fixes
 
@@ -135,7 +146,7 @@ Full Changelog: [v1.0.1-rc.6...v1.0.1-rc.7](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.1-rc.5...v1.0.1-rc.6](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.5...v1.0.1-rc.6)
 
-## [v1.0.1-rc.5] (2023-02-13)
+## [v1.0.1-rc.5](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.4...v1.0.1-rc.5) (2023-02-13)
 
 ### Bug Fixes
 
@@ -143,7 +154,7 @@ Full Changelog: [v1.0.1-rc.5...v1.0.1-rc.6](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.1-rc.4...v1.0.1-rc.5](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.4...v1.0.1-rc.5)
 
-## [v1.0.1-rc.4] (2023-02-13)
+## [v1.0.1-rc.4](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.3...v1.0.1-rc.4) (2023-02-13)
 
 ### Bug Fixes
 
@@ -151,7 +162,7 @@ Full Changelog: [v1.0.1-rc.4...v1.0.1-rc.5](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.1-rc.3...v1.0.1-rc.4](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.3...v1.0.1-rc.4)
 
-## [v1.0.1-rc.3] (2023-02-13)
+## [v1.0.1-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.2...v1.0.1-rc.3) (2023-02-13)
 
 ### Bug Fixes
 
@@ -159,7 +170,7 @@ Full Changelog: [v1.0.1-rc.3...v1.0.1-rc.4](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.1-rc.2...v1.0.1-rc.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.2...v1.0.1-rc.3)
 
-## [v1.0.1-rc.2] (2023-02-13)
+## [v1.0.1-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.1...v1.0.1-rc.2) (2023-02-13)
 
 ### Bug Fixes
 
@@ -167,7 +178,7 @@ Full Changelog: [v1.0.1-rc.2...v1.0.1-rc.3](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.1-rc.1...v1.0.1-rc.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.1...v1.0.1-rc.2)
 
-## [v1.0.1-rc.1] (2023-02-13)
+## [v1.0.1-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.0...v1.0.1-rc.1) (2023-02-13)
 
 ### Bug Fixes
 
@@ -175,7 +186,7 @@ Full Changelog: [v1.0.1-rc.1...v1.0.1-rc.2](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.1-rc.0...v1.0.1-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.0...v1.0.1-rc.1)
 
-## [v1.0.1-rc.0] (2023-02-13)
+## [v1.0.1-rc.0](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.0-rc.1...v1.0.1-rc.0) (2023-02-13)
 
 ### Bug Fixes
 
@@ -202,22 +213,3 @@ Full Changelog: [v1.0.0-rc.1...v1.0.1-rc.0](https://github.com/ansidev/sample-gi
 - update README.md
 
 Full Changelog: [v1.0.0-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/commits/v1.0.0-rc.1)
-
-[v1.1.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1...v1.1.2
-[v1.1.1]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1-rc.0...v1.1.1
-[v1.1.1-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0
-[v1.1.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.3...v1.1.0
-[v1.1.0-rc.3]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.2...v1.1.0-rc.3
-[v1.1.0-rc.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.1...v1.1.0-rc.2
-[v1.1.0-rc.1]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.0...v1.1.0-rc.1
-[v1.1.0-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2...v1.1.0-rc.0
-[v1.0.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.2-rc.0...v1.0.2
-[v1.0.2-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.7...v1.0.2-rc.0
-[v1.0.1-rc.7]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.6...v1.0.1-rc.7
-[v1.0.1-rc.6]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.5...v1.0.1-rc.6
-[v1.0.1-rc.5]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.4...v1.0.1-rc.5
-[v1.0.1-rc.4]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.3...v1.0.1-rc.4
-[v1.0.1-rc.3]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.2...v1.0.1-rc.3
-[v1.0.1-rc.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.1...v1.0.1-rc.2
-[v1.0.1-rc.1]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.1-rc.0...v1.0.1-rc.1
-[v1.0.1-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.0.0-rc.1...v1.0.1-rc.0
