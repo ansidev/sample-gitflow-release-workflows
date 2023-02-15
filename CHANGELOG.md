@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
 
+## [v1.1.2] (2023-02-15)
+
+### Documentations
+
+- **changelog:** change format of CHANGELOG.md
+
+### Features
+
+- **dev-tool:** add git-chglog config
+
+Full Changelog: [v1.1.1...v1.1.2](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1...v1.1.2)
+
 ## [v1.1.1] (2023-02-14)
 
 Full Changelog: [v1.1.1-rc.0...v1.1.1](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1-rc.0...v1.1.1)
@@ -191,6 +203,7 @@ Full Changelog: [v1.0.0-rc.1...v1.0.1-rc.0](https://github.com/ansidev/sample-gi
 
 Full Changelog: [v1.0.0-rc.1](https://github.com/ansidev/sample-gitflow-release-workflows/commits/v1.0.0-rc.1)
 
+[v1.1.2]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1...v1.1.2
 [v1.1.1]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.1-rc.0...v1.1.1
 [v1.1.1-rc.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0...v1.1.1-rc.0
 [v1.1.0]: https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.0-rc.3...v1.1.0
