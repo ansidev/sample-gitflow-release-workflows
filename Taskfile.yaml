@@ -33,7 +33,7 @@ tasks:
     vars:
       VERSION_TAG: ${TAG_PREFIX}{{.CLI_ARGS}}
     cmds:
-      - git-chglog --output ${CHANGES_DIR}/{{.VERSION_TAG}}.md --next-tag {{.VERSION_TAG}}
+      - git-chglog --output ${CHANGES_DIR}/{{.VERSION_TAG}}.md --next-tag {{.VERSION_TAG}} {{.VERSION_TAG}}
     silent: true
 
   bump-version:
@@ -62,5 +62,6 @@ tasks:
       - echo "Releasing version {{.VERSION_TAG}}"
       - task changelog-next -- {{.CLI_ARGS}}
       - task bump-version -- {{.CLI_ARGS}}
+      - changie merge
       - task commit-release -- {{.CLI_ARGS}}
     silent: true
