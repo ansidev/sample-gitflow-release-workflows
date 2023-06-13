@@ -24,11 +24,11 @@ Since [v1.1.4](https://github.com/ansidev/sample-gitflow-release-workflows/relea
 
 - Workflows
 
-  | Name                              | Description                                  | File                                                                                 |
-  | --------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------ |
-  | Create release PR                 | Automate creating a release/hotfix PR        | [create_release_pr.yml](./.github/workflows/create_release_pr.yml)                   |
-  | Publish release                   | Automate publishing new release              | [publish_release.yml](./.github/workflows/publish_release.yml)                       |
-  | Merge release/hotfix into develop | Automate merging release/hotfix into develop | [merge_release_into_develop.yml](./.github/workflows/merge_release_into_develop.yml) |
+  | Name                              | Description                                  | File                                                                                   |
+  | --------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------- |
+  | Create release PR                 | Automate creating a release/hotfix PR        | [create_release_pr.yaml](./.github/workflows/create_release_pr.yaml)                   |
+  | Publish release                   | Automate publishing new release              | [publish_release.yaml](./.github/workflows/publish_release.yaml)                       |
+  | Merge release/hotfix into develop | Automate merging release/hotfix into develop | [merge_release_into_develop.yaml](./.github/workflows/merge_release_into_develop.yaml) |
 
 - You have to update below env variables if necessary
 
