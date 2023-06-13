@@ -9,5 +9,5 @@ newlines:
   endOfVersion: 1
 replacements:
   - path: "VERSION"
-    find: ".*"
+    find: ".+"
     replace: "{{.VersionNoPrefix}}"

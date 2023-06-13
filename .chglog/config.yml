@@ -12,6 +12,8 @@ options:
         - perf
         - refactor
         - docs
+        - build
+        - ci
   commit_groups:
     title_maps:
       feat: Features
@@ -19,6 +21,8 @@ options:
       perf: Performance Improvements
       refactor: Code Refactoring
       docs: Documentations
+      build: Others
+      ci: Others
   header:
     pattern: "^(\\w*)(?:\\(([\\w\\$\\.\\-\\*\\s]*)\\))?\\:\\s(.*)$"
     pattern_maps:
