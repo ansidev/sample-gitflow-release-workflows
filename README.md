@@ -5,6 +5,8 @@
 
 Sample Gitflow release workflow using GitHub Actions and official [GitHub CLI](https://cli.github.com/manual/).
 
+Since [v1.1.4](https://github.com/ansidev/sample-gitflow-release-workflows/releases/tag/v1.1.4), I created [Gitflow GitHub Actions](https://github.com/ghacts/gitflow) for reusing and applied them in this repository.
+
 ## Features
 
 - Auto create a draft PR on pushing new branch `release/**` or `hotfix/**`.
@@ -22,18 +24,16 @@ Sample Gitflow release workflow using GitHub Actions and official [GitHub CLI](h
 
 - Workflows
 
-  | Name                                   | Description                                     | File                                                                                                           |
-  | -------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-  | Release                                | Automate releasing                              | [release.yaml](./.github/workflows/release.yaml)                                                               |
-  | Auto merge release/hotfix into develop | Automate merging release/hotfix PR into develop | [auto_merge_release_hotfix_into_develop.yaml](./.github/workflows/auto_merge_release_hotfix_into_develop.yaml) |
-  | Draft release/hotfix PR                | Automate drafting a release/hotfix PR           | [draft_release_hotfix_pr.yaml](./.github/workflows/draft_release_hotfix_pr.yaml)                               |
+  | Name                              | Description                                  | File                                                                                 |
+  | --------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------ |
+  | Create release PR                 | Automate creating a release/hotfix PR        | [create_release_pr.yml](./.github/workflows/create_release_pr.yml)                   |
+  | Publish release                   | Automate publishing new release              | [publish_release.yml](./.github/workflows/publish_release.yml)                       |
+  | Merge release/hotfix into develop | Automate merging release/hotfix into develop | [merge_release_into_develop.yml](./.github/workflows/merge_release_into_develop.yml) |
 
 - You have to update below env variables if necessary
 
   | Environment variable | Description            | Default value |
   | -------------------- | ---------------------- | ------------- |
-  | BRANCH_MAIN          | The main branch        | `main`        |
-  | BRANCH_DEVELOP       | The develop branch     | `develop`     |
   | TAG_PREFIX           | The prefix for git tag | `v`           |
 
   **Note**: If you don't use the above default values, you have to update corresponding values for the workflow(s).

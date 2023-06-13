@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v1.1.4](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.3...v1.1.4) (2023-06-13)
+
+### Bug Fixes
+
+- **changelog:** update chglog config
+
+- **changelog:** correct changelog configs
+
+### Documentations
+
+- **readme:** update README.md
+
+### Features
+
+- **taskfile:** add taskfiles
+
+### Others
+
+- **github-workflow:** update workflows, apply actions from ghacts/gitflow
+
+Full Changelog: [v1.1.3...v1.1.4](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.3...v1.1.4)
+
 ## [v1.1.3](https://github.com/ansidev/sample-gitflow-release-workflows/compare/v1.1.2...v1.1.3) (2023-02-15)
 
 ### Documentations
